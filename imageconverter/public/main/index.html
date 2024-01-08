@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>이미지 변환기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>이미지 변환기</h1>
+        <p class="compression-message">변환 완료 후 자동 압축이 진행되오니 잠시 기다려 주시기 바랍니다.</p>
+
+        <div class="upload-and-convert-container">
+            <div class="file-select-container">
+                <input type="file" id="image-input" multiple accept=".jpeg, .jpg, .bmp, .png, .psd, .gif">
+                <label for="image-input">파일 선택</label>
+            </div>
+            <div class="extension-change-container">
+                <label for="global-extension-select">전체 확장자 변경: </label>
+                <select id="global-extension-select">
+                    <option value="jpeg">JPEG</option>
+                    <option value="png">PNG</option>
+                    <option value="webp">WEBP</option>
+                    <option value="gif">GIF</option>
+                </select>
+            </div>
+            <button id="convert-button">변환</button>
+            <button id="download-button" style="display:none;">다운로드</button> <!-- 다운로드 버튼 수정됨 -->
+        </div>
+
+        <table id="image-table">
+            <thead>
+                <tr>
+                    <th>파일 이름</th>
+                    <th>변환 형식</th>
+                    <th>변환 과정</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

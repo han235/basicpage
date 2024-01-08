@@ -1,0 +1,104 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+.upload-and-convert-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.file-select-container, .extension-change-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#image-input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+label:hover {
+  background-color: #45a049;
+}
+
+#convert-button {
+  padding: 10px 20px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#convert-button:hover {
+  background-color: #007bb5;
+}
+
+#download-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: none; /* 처음에는 숨겨짐 */
+}
+
+#download-button:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
